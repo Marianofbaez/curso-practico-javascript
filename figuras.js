@@ -18,18 +18,10 @@ console.groupEnd();
 
 // CÓDIGO DEL TRIÁNGULO
 console.group("Triángulos");
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const baseTriangulo = 4;
-console.log(
-    "Los lados del triángulo miden: "
- + ladoTriangulo1 
- + "cm, " 
- + ladoTriangulo2 
- + "cm, " 
- + baseTriangulo 
- + "cm"
- );
+//const ladoTriangulo1 = 6;
+//const ladoTriangulo2 = 6;
+//const baseTriangulo = 4;
+//console.log( "Los lados del triángulo miden: " + ladoTriangulo1  + "cm, "  + ladoTriangulo2  + "cm, "  + baseTriangulo  + "cm" );
 
 // const alturaTriangulo= 5.5;
 //console.log ("La altura del triángulo es de: " + alturaTriangulo + "cm");
@@ -74,3 +66,22 @@ function areaCirculo (radio) {
 }
 
 console.groupEnd();
+
+
+//Aquí interactuamos con el HTML
+
+//CUADRADO
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+function calcularAreaCuadrado() {
+
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
